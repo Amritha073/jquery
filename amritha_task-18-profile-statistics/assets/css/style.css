@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../images/vh.jpg') no-repeat center ;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+.stats-container {
+  margin: 20px;
+  padding: 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  width: 200px;
+  height: 100px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stats-container:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stats-container h4 {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 18px;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+.counter {
+  font-size: 50px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+}
+.stats-container {
+  width: 100px;
+  height: 50px;
+}
